@@ -32,3 +32,10 @@ Matrix Factorization             |  Model Architecture
 :-------------------------|:-------------------------:
 Initialize user, item, feature and item embeddings of appropriate shapes.<br>Concatenate user embedding with context feature embeddings and item embeddings with item feature embeddings for all training entries.<br>Matrix multiplication of the concatenated user and item matrices.<br>Sigmoid returns the probability of getting the output label=1, i.e. in this case, probability whether user likes the item. <br>Binary Cross Entropy loss is used for this problem|  ![](https://github.com/ashwanirajan/Implicit-Rating-Predictions-on-booking.com-data/blob/main/MF_model.jpg)
 
+Neural Network             |  Model Architecture
+:-------------------------|:-------------------------:
+Initialize user, item, feature and item embeddings of appropriate shapes.<br>Concatenate all embeddings for any training entry.<br>Linear layer 1 takes input size equal to length of concatenated vector and returns an intermediate layer.<br> Dropout with probability of 0.2-0.3 is added to prevent overfitting.<br> Sigmoid returns the class probabilities, in this case, the probability of user liking item.|  ![](https://github.com/ashwanirajan/Implicit-Rating-Predictions-on-booking.com-data/blob/main/NN.jpg)
+
+Tree-Based Models             |  Model Architecture
+:-------------------------|:-------------------------:
+Initialize user and item embeddings of appropriate shapes(embedding size = 50).<br> Train the embeddings in a Matrix Factorization model. <br> Concatenate the trained user and item embeddings for all training entries.<br> The concatenated vectors are passed to tree based models, along with the encoded context and item feature ids.<br> model.predict_proba() returns the class probabilities for user liking and disliking the item.|  ![](https://github.com/ashwanirajan/Implicit-Rating-Predictions-on-booking.com-data/blob/main/tree_models.jpg)
