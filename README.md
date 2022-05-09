@@ -30,17 +30,5 @@ score and generate negative data using these weights
 ## Modeling
 Matrix Factorization             |  Model Architecture
 :-------------------------:|:-------------------------:
-○ Initialize user, item, feature and item
-embeddings of appropriate shapes.
-○ Concatenate user embedding with
-context feature embeddings and item
-embeddings with item feature
-embeddings for all training entries.
-○ Matrix multiplication of the
-concatenated user and item matrices.
-○ Sigmoid returns the probability of
-getting the output label=1, i.e. in this
-case, probability whether user likes the
-item.
-○ Binary Cross Entropy loss is used for this problem|  ![](https://github.com/ashwanirajan/Implicit-Rating-Predictions-on-booking.com-data/blob/main/MF_model.jpg)
+○ Initialize user, item, feature and item embeddings of appropriate shapes.<br>○ Concatenate user embedding with context feature embeddings and item embeddings with item feature embeddings for all training entries.<br> ○ Matrix multiplication of the concatenated user and item matrices.<br>○ Sigmoid returns the probability of getting the output label=1, i.e. in this case, probability whether user likes the item. <br> ○ Binary Cross Entropy loss is used for this problem|  ![](https://github.com/ashwanirajan/Implicit-Rating-Predictions-on-booking.com-data/blob/main/MF_model.jpg)
 
