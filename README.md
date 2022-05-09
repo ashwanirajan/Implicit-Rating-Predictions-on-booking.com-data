@@ -13,7 +13,7 @@ Our data contains:
 
 ## Data Preprocessing Workflow
 
-![Data Preprocessing](preprocessing.jpeg)
+![Data Preprocessing](https://github.com/ashwanirajan/Implicit-Rating-Predictions-on-booking.com-data/blob/main/preprocessing.jpg)
 
 ## Negative Sampling
 
@@ -30,7 +30,7 @@ score and generate negative data using these weights
 ## Modeling
 Matrix Factorization             |  Model Architecture
 :-------------------------:|:-------------------------:
-  ○ Initialize user, item, feature and item
+○ Initialize user, item, feature and item
 embeddings of appropriate shapes.
 ○ Concatenate user embedding with
 context feature embeddings and item
@@ -42,6 +42,5 @@ concatenated user and item matrices.
 getting the output label=1, i.e. in this
 case, probability whether user likes the
 item.
-○ Binary Cross Entropy loss is used for
-this problem|  ![](MF_model.jpeg)
+○ Binary Cross Entropy loss is used for this problem|  ![](https://github.com/ashwanirajan/Implicit-Rating-Predictions-on-booking.com-data/blob/main/MF_model.jpg)
 
